@@ -69,3 +69,4 @@ test('dfsIteration:domTree', () => {
 test('bfsIteration:domTree', () => {
     expect(bfsIteration(domTree)).toEqual(["root", "div1", "div2", "div3", "div4", "span1", "span2", "p1", "p2", "vedio1", "vedio2", "img1", "img2", "span", "span"])
 })
+

@@ -8,3 +8,4 @@
 ![queue](https://github.com/i7eo/pictures/blob/master/queue-1.png?raw=true)
 
     即使在js中数组既可以从俩侧均可出入且可动态增加数组长度但是为了遵循队列先进先出的规则所以队列已满时我们不能再接受入队。此时可以移动维护的头/尾指针，来进行假出队（真赋值）。
+
