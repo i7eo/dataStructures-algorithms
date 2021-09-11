@@ -10,15 +10,15 @@ var isValid = function (s) {
         "[": "]",
         "{": "}"
     }
-    var leftArr = []
+    var leftStack = []
     for (var ch of s){
         if (ch in map) {
             //为左括号时，顺序保存   
-            leftArr.push(ch);
+            leftStack.push(ch);
         }else {
             //为右括号时，与数组末位匹配
-            if(ch != map[leftArr.pop()]) return false;
+            if(ch !== map[leftStack.pop()]) return false;
         }
     }
-    return !leftArr.length //防止全部为左括号
+    return leftStack.length === 0 //防止全部为左括号
 };
